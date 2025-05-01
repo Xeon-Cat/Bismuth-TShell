@@ -1,0 +1,3 @@
+/mnt/d/Projects/Bismuth/CMakeFiles/Bismuth.dir
+/mnt/d/Projects/Bismuth/CMakeFiles/edit_cache.dir
+/mnt/d/Projects/Bismuth/CMakeFiles/rebuild_cache.dir
