@@ -15,5 +15,6 @@ int main() {
     wm->active(wm, win2);
     wm->active(wm, win);
     wm->active(wm, win3);
+    wm->active(wm, win);
     wm->mainLoop(wm);
 }
