@@ -9,7 +9,7 @@
 
 
 /* 窗口结构体 */
-typedef struct Bismuth Bismuth;
+typedef struct BWinManager BWinManager;
 typedef struct Window Window;
 struct Window {
     int x, y;           // 窗口位置
@@ -32,7 +32,7 @@ struct Window {
     void (*setActive)(Window* this, bool operation);
 
     void (*drawWindow)(Window *this);
-}; Window* newWindow(int x, int y, int w, int h, const char* title, Bismuth* master);
+}; Window* newWindow(int x, int y, int w, int h, const char* title, BWinManager* master);
 
 
 

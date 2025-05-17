@@ -12,6 +12,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeLists.txt"
   "/usr/share/cmake-3.31/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.31/Modules/CMakeCommonLanguageInclude.cmake"
+  "/usr/share/cmake-3.31/Modules/CMakeExtraGeneratorDetermineCompilerMacrosAndIncludeDirs.cmake"
+  "/usr/share/cmake-3.31/Modules/CMakeFindCodeBlocks.cmake"
   "/usr/share/cmake-3.31/Modules/CMakeGenericSystem.cmake"
   "/usr/share/cmake-3.31/Modules/CMakeInitializeConfigs.cmake"
   "/usr/share/cmake-3.31/Modules/CMakeLanguageInformation.cmake"
@@ -32,6 +34,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-3.31/Modules/Platform/Linux-Initialize.cmake"
   "/usr/share/cmake-3.31/Modules/Platform/Linux.cmake"
   "/usr/share/cmake-3.31/Modules/Platform/UnixPaths.cmake"
+  "/usr/share/cmake-3.31/Modules/ProcessorCount.cmake"
   )
 
 # The corresponding makefile is:

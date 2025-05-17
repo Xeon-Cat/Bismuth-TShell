@@ -11,10 +11,10 @@
 				<Option working_dir="/mnt/d/Projects/Bismuth"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -f &quot;/mnt/d/Projects/Bismuth/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/gmake -f &quot;/mnt/d/Projects/Bismuth/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -f &quot;/mnt/d/Projects/Bismuth/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -f &quot;/mnt/d/Projects/Bismuth/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/mnt/d/Projects/Bismuth/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/mnt/d/Projects/Bismuth/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/mnt/d/Projects/Bismuth/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/mnt/d/Projects/Bismuth/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Bismuth">
@@ -25,12 +25,16 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/mnt/d/Projects/Bismuth/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/14/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -f &quot;/mnt/d/Projects/Bismuth/Makefile&quot;  VERBOSE=1 Bismuth"/>
-					<CompileFile command="/usr/bin/gmake -f &quot;/mnt/d/Projects/Bismuth/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -f &quot;/mnt/d/Projects/Bismuth/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -f &quot;/mnt/d/Projects/Bismuth/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/mnt/d/Projects/Bismuth/Makefile&quot;  VERBOSE=1 Bismuth"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/mnt/d/Projects/Bismuth/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/mnt/d/Projects/Bismuth/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/mnt/d/Projects/Bismuth/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Bismuth/fast">
@@ -41,42 +45,49 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/mnt/d/Projects/Bismuth/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/14/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -f &quot;/mnt/d/Projects/Bismuth/Makefile&quot;  VERBOSE=1 Bismuth/fast"/>
-					<CompileFile command="/usr/bin/gmake -f &quot;/mnt/d/Projects/Bismuth/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -f &quot;/mnt/d/Projects/Bismuth/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -f &quot;/mnt/d/Projects/Bismuth/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/mnt/d/Projects/Bismuth/Makefile&quot;  VERBOSE=1 Bismuth/fast"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/mnt/d/Projects/Bismuth/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/mnt/d/Projects/Bismuth/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/mnt/d/Projects/Bismuth/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="/mnt/d/Projects/Bismuth"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -f &quot;/mnt/d/Projects/Bismuth/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/gmake -f &quot;/mnt/d/Projects/Bismuth/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -f &quot;/mnt/d/Projects/Bismuth/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -f &quot;/mnt/d/Projects/Bismuth/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/mnt/d/Projects/Bismuth/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/mnt/d/Projects/Bismuth/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/mnt/d/Projects/Bismuth/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/mnt/d/Projects/Bismuth/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
 				<Option working_dir="/mnt/d/Projects/Bismuth"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -f &quot;/mnt/d/Projects/Bismuth/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/gmake -f &quot;/mnt/d/Projects/Bismuth/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -f &quot;/mnt/d/Projects/Bismuth/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -f &quot;/mnt/d/Projects/Bismuth/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/mnt/d/Projects/Bismuth/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/mnt/d/Projects/Bismuth/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/mnt/d/Projects/Bismuth/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/mnt/d/Projects/Bismuth/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/mnt/d/Projects/Bismuth/include/Bismuth.h">
+		<Unit filename="/mnt/d/Projects/Bismuth/include/BWinManager.h">
+			<Option target="Bismuth"/>
+		</Unit>
+		<Unit filename="/mnt/d/Projects/Bismuth/include/Module.h">
 			<Option target="Bismuth"/>
 		</Unit>
 		<Unit filename="/mnt/d/Projects/Bismuth/include/TermWin.h">
 			<Option target="Bismuth"/>
 		</Unit>
-		<Unit filename="/mnt/d/Projects/Bismuth/src/Bismuth.c">
+		<Unit filename="/mnt/d/Projects/Bismuth/src/BWinManager.c">
 			<Option target="Bismuth"/>
 		</Unit>
 		<Unit filename="/mnt/d/Projects/Bismuth/src/TermWin.c">

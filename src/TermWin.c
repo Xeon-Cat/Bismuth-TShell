@@ -1,56 +1,10 @@
 /* termwin.c - 终端窗口实现 */
 #include "TermWin.h"
-#include "Bismuth.h"
+#include "BWinManager.h"
 
 #include <stdio.h>
 #include <string.h>
 
-static void drawWindow(Window *this);
-static int getX(const Window* this);
-static int getY(const Window* this);
-static void setPos(Window* this, int x, int y);
-static int getWidth(const Window* this);
-static int getHeight(const Window* this);
-static void setSize(Window* this, int width, int height);
-static int getID(const Window* this);
-static char* getTitle(const Window* this);
-static void setTitle(Window* this, const char* title);
-static bool isActive(const Window* this);
-static void setActive(Window* this, bool operation);
-
-
-Window* newWindow(int x, int y,
-                  int w, int h,
-                  const char* title,
-                  Bismuth* master) {
-    if (master->winCount >= MAX_WINDOWS) return NULL;
-
-    Window *win = &master->windows[master->winCount];
-    win->id = master->winCount;
-    master->winCount++;
-
-    win->drawWindow = drawWindow;
-    win->getX = getX; win->getY = getY;
-    win->setPos = setPos;
-    win->getWidth = getWidth;
-    win->getHeight = getHeight;
-    win->setSize = setSize;
-    win->getID = getID;
-    win->getTitle = getTitle;
-    win->setTitle = setTitle;
-    win->isActive = isActive;
-    win->drawWindow = drawWindow;
-    win->setActive = setActive;
-
-    win->x = x;
-    win->y = y;
-    win->width = w;
-    win->height = h;
-    strncpy(win->title, title, TITLE_MAX);
-    win->title[TITLE_MAX - 1] = '\0';
-    win->active = false;
-    return win;
-}
 
 /* 绘制单个窗口 */
 static void drawWindow(Window *this) {
@@ -112,4 +66,37 @@ static bool isActive(const Window* this) {
 
 static void setActive(Window* this, bool operation) {
     this->active = operation;
+}
+
+Window* newWindow(int x, int y,
+                  int w, int h,
+                  const char* title,
+                  BWinManager* master) {
+    if (master->winCount >= MAX_WINDOWS) return NULL;
+
+    Window *win = &master->windows[master->winCount];
+    win->id = master->winCount;
+    master->winCount++;
+
+    win->drawWindow = drawWindow;
+    win->getX = getX; win->getY = getY;
+    win->setPos = setPos;
+    win->getWidth = getWidth;
+    win->getHeight = getHeight;
+    win->setSize = setSize;
+    win->getID = getID;
+    win->getTitle = getTitle;
+    win->setTitle = setTitle;
+    win->isActive = isActive;
+    win->drawWindow = drawWindow;
+    win->setActive = setActive;
+
+    win->x = x;
+    win->y = y;
+    win->width = w;
+    win->height = h;
+    strncpy(win->title, title, TITLE_MAX);
+    win->title[TITLE_MAX - 1] = '\0';
+    win->active = false;
+    return win;
 }

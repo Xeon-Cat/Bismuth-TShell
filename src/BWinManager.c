@@ -1,5 +1,5 @@
-/* Bismuth.c - 窗口管理器实现 */
-#include "Bismuth.h"
+/* BWinManager.c - 窗口管理器实现 */
+#include "BWinManager.h"
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -8,17 +8,17 @@
 
 
 static struct termios orig_termios;
-static void initTerminal(Bismuth* this);
+static void initTerminal(BWinManager* this);
 static void restoreTerminal();
-static void mainLoop(Bismuth* this);
-static int getActiveWinIndex(Bismuth* this);
-static void setActiveWinIndex(Bismuth* this, int index);
-static int getWinCount(Bismuth* this);
-static void active(Bismuth* this, Window* win);
+static void mainLoop(BWinManager* this);
+static int getActiveWinIndex(BWinManager* this);
+static void setActiveWinIndex(BWinManager* this, int index);
+static int getWinCount(BWinManager* this);
+static void active(BWinManager* this, Window* win);
 
 /* 构造函数 */
-Bismuth* newBismuth() {
-    Bismuth* this = malloc(sizeof(Bismuth));
+BWinManager* newBismuth() {
+    BWinManager* this = malloc(sizeof(BWinManager));
     this->activeWinIndex = 0;
     this->winCount = 0;
     this->initTerminal = initTerminal;
@@ -31,12 +31,12 @@ Bismuth* newBismuth() {
     return this;
 }
 /* 析构函数 */
-void delBismuth(Bismuth* this) {
+void delBismuth(BWinManager* this) {
     free(this);
 }
 
 /* 初始化终端原始模式 */
-static void initTerminal(Bismuth* this) {
+static void initTerminal(BWinManager* this) {
     struct termios raw;
     tcgetattr(STDIN_FILENO, &orig_termios);
     atexit(this->restoreTerminal);
@@ -57,7 +57,7 @@ static void restoreTerminal() {
 }
 
 /* 主事件循环 */
-static void mainLoop(Bismuth* this) {
+static void mainLoop(BWinManager* this) {
     char input;
     while (1) {
         // 清屏并绘制所有窗口
@@ -96,11 +96,11 @@ static void mainLoop(Bismuth* this) {
     delBismuth(this);
 }
 
-static int getActiveWinIndex(Bismuth* this) { return this->activeWinIndex; }
+static int getActiveWinIndex(BWinManager* this) { return this->activeWinIndex; }
 
-static int getWinCount(Bismuth* this) { return this->winCount; }
+static int getWinCount(BWinManager* this) { return this->winCount; }
 
-static void active(Bismuth* this, Window* win) {
+static void active(BWinManager* this, Window* win) {
     if (win->isActive(win)) return;
     Window* tmp = &this->windows[this->getActiveWinIndex(this)];
     tmp->setActive(tmp, false);
@@ -108,6 +108,6 @@ static void active(Bismuth* this, Window* win) {
     win->setActive(win, true);
 }
 
-static void setActiveWinIndex(Bismuth* this, int index) {
+static void setActiveWinIndex(BWinManager* this, int index) {
     this->activeWinIndex = index;
 }

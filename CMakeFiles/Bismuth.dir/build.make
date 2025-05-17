@@ -100,32 +100,32 @@ CMakeFiles/Bismuth.dir/test/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Bismuth.dir/test/main.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/Projects/Bismuth/test/main.c -o CMakeFiles/Bismuth.dir/test/main.c.s
 
-CMakeFiles/Bismuth.dir/src/Bismuth.c.o: CMakeFiles/Bismuth.dir/flags.make
-CMakeFiles/Bismuth.dir/src/Bismuth.c.o: src/Bismuth.c
-CMakeFiles/Bismuth.dir/src/Bismuth.c.o: CMakeFiles/Bismuth.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/d/Projects/Bismuth/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Bismuth.dir/src/Bismuth.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Bismuth.dir/src/Bismuth.c.o -MF CMakeFiles/Bismuth.dir/src/Bismuth.c.o.d -o CMakeFiles/Bismuth.dir/src/Bismuth.c.o -c /mnt/d/Projects/Bismuth/src/Bismuth.c
+CMakeFiles/Bismuth.dir/src/BWinManager.c.o: CMakeFiles/Bismuth.dir/flags.make
+CMakeFiles/Bismuth.dir/src/BWinManager.c.o: src/BWinManager.c
+CMakeFiles/Bismuth.dir/src/BWinManager.c.o: CMakeFiles/Bismuth.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/d/Projects/Bismuth/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Bismuth.dir/src/BWinManager.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Bismuth.dir/src/BWinManager.c.o -MF CMakeFiles/Bismuth.dir/src/BWinManager.c.o.d -o CMakeFiles/Bismuth.dir/src/BWinManager.c.o -c /mnt/d/Projects/Bismuth/src/BWinManager.c
 
-CMakeFiles/Bismuth.dir/src/Bismuth.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Bismuth.dir/src/Bismuth.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/Projects/Bismuth/src/Bismuth.c > CMakeFiles/Bismuth.dir/src/Bismuth.c.i
+CMakeFiles/Bismuth.dir/src/BWinManager.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Bismuth.dir/src/BWinManager.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/Projects/Bismuth/src/BWinManager.c > CMakeFiles/Bismuth.dir/src/BWinManager.c.i
 
-CMakeFiles/Bismuth.dir/src/Bismuth.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Bismuth.dir/src/Bismuth.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/Projects/Bismuth/src/Bismuth.c -o CMakeFiles/Bismuth.dir/src/Bismuth.c.s
+CMakeFiles/Bismuth.dir/src/BWinManager.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Bismuth.dir/src/BWinManager.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/Projects/Bismuth/src/BWinManager.c -o CMakeFiles/Bismuth.dir/src/BWinManager.c.s
 
 # Object files for target Bismuth
 Bismuth_OBJECTS = \
 "CMakeFiles/Bismuth.dir/src/TermWin.c.o" \
 "CMakeFiles/Bismuth.dir/test/main.c.o" \
-"CMakeFiles/Bismuth.dir/src/Bismuth.c.o"
+"CMakeFiles/Bismuth.dir/src/BWinManager.c.o"
 
 # External object files for target Bismuth
 Bismuth_EXTERNAL_OBJECTS =
 
 Bismuth: CMakeFiles/Bismuth.dir/src/TermWin.c.o
 Bismuth: CMakeFiles/Bismuth.dir/test/main.c.o
-Bismuth: CMakeFiles/Bismuth.dir/src/Bismuth.c.o
+Bismuth: CMakeFiles/Bismuth.dir/src/BWinManager.c.o
 Bismuth: CMakeFiles/Bismuth.dir/build.make
 Bismuth: CMakeFiles/Bismuth.dir/compiler_depend.ts
 Bismuth: CMakeFiles/Bismuth.dir/link.txt

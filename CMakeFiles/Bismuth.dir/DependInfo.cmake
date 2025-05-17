@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/mnt/d/Projects/Bismuth/src/Bismuth.c" "CMakeFiles/Bismuth.dir/src/Bismuth.c.o" "gcc" "CMakeFiles/Bismuth.dir/src/Bismuth.c.o.d"
+  "/mnt/d/Projects/Bismuth/src/BWinManager.c" "CMakeFiles/Bismuth.dir/src/BWinManager.c.o" "gcc" "CMakeFiles/Bismuth.dir/src/BWinManager.c.o.d"
   "/mnt/d/Projects/Bismuth/src/TermWin.c" "CMakeFiles/Bismuth.dir/src/TermWin.c.o" "gcc" "CMakeFiles/Bismuth.dir/src/TermWin.c.o.d"
   "/mnt/d/Projects/Bismuth/test/main.c" "CMakeFiles/Bismuth.dir/test/main.c.o" "gcc" "CMakeFiles/Bismuth.dir/test/main.c.o.d"
   "" "Bismuth" "gcc" "CMakeFiles/Bismuth.dir/link.d"

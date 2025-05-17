@@ -2,7 +2,7 @@ CMakeFiles/Bismuth.dir/src/TermWin.c.o: \
  /mnt/d/Projects/Bismuth/src/TermWin.c /usr/include/stdc-predef.h \
  /mnt/d/Projects/Bismuth/include/TermWin.h \
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdbool.h \
- /mnt/d/Projects/Bismuth/include/Bismuth.h \
+ /mnt/d/Projects/Bismuth/include/BWinManager.h \
  /mnt/d/Projects/Bismuth/include/TermWin.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \

@@ -1,8 +1,8 @@
-#include "Bismuth.h"
+#include "BWinManager.h"
 #include <stdio.h>
 
 int main() {
-    Bismuth* wm = newBismuth();
+    BWinManager* wm = newBismuth();
     wm->initTerminal(wm);
     Window* win = newWindow(1, 1, 40, 10, "Window0", wm);
     Window* win1 = newWindow(5, 5, 40, 10, "Window1", wm);
@@ -10,11 +10,6 @@ int main() {
     Window* win3 = newWindow(15, 15, 40, 10, "Window3", wm);
     printf("win id:%d\nwin1 id:%d\n", win->id, win1->id);
     printf("%d", wm->activeWinIndex);
-    wm->active(wm, win1);
-    wm->active(wm, win);
-    wm->active(wm, win2);
-    wm->active(wm, win);
-    wm->active(wm, win3);
     wm->active(wm, win);
     wm->mainLoop(wm);
 }

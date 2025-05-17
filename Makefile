@@ -136,29 +136,29 @@ Bismuth/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Bismuth.dir/build.make CMakeFiles/Bismuth.dir/build
 .PHONY : Bismuth/fast
 
-src/Bismuth.o: src/Bismuth.c.o
-.PHONY : src/Bismuth.o
+src/BWinManager.o: src/BWinManager.c.o
+.PHONY : src/BWinManager.o
 
 # target to build an object file
-src/Bismuth.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Bismuth.dir/build.make CMakeFiles/Bismuth.dir/src/Bismuth.c.o
-.PHONY : src/Bismuth.c.o
+src/BWinManager.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Bismuth.dir/build.make CMakeFiles/Bismuth.dir/src/BWinManager.c.o
+.PHONY : src/BWinManager.c.o
 
-src/Bismuth.i: src/Bismuth.c.i
-.PHONY : src/Bismuth.i
+src/BWinManager.i: src/BWinManager.c.i
+.PHONY : src/BWinManager.i
 
 # target to preprocess a source file
-src/Bismuth.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Bismuth.dir/build.make CMakeFiles/Bismuth.dir/src/Bismuth.c.i
-.PHONY : src/Bismuth.c.i
+src/BWinManager.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Bismuth.dir/build.make CMakeFiles/Bismuth.dir/src/BWinManager.c.i
+.PHONY : src/BWinManager.c.i
 
-src/Bismuth.s: src/Bismuth.c.s
-.PHONY : src/Bismuth.s
+src/BWinManager.s: src/BWinManager.c.s
+.PHONY : src/BWinManager.s
 
 # target to generate assembly for a file
-src/Bismuth.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Bismuth.dir/build.make CMakeFiles/Bismuth.dir/src/Bismuth.c.s
-.PHONY : src/Bismuth.c.s
+src/BWinManager.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Bismuth.dir/build.make CMakeFiles/Bismuth.dir/src/BWinManager.c.s
+.PHONY : src/BWinManager.c.s
 
 src/TermWin.o: src/TermWin.c.o
 .PHONY : src/TermWin.o
@@ -218,9 +218,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Bismuth"
-	@echo "... src/Bismuth.o"
-	@echo "... src/Bismuth.i"
-	@echo "... src/Bismuth.s"
+	@echo "... src/BWinManager.o"
+	@echo "... src/BWinManager.i"
+	@echo "... src/BWinManager.s"
 	@echo "... src/TermWin.o"
 	@echo "... src/TermWin.i"
 	@echo "... src/TermWin.s"

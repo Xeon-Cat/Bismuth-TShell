@@ -1,5 +1,5 @@
 CMakeFiles/Bismuth.dir/test/main.c.o: /mnt/d/Projects/Bismuth/test/main.c \
- /usr/include/stdc-predef.h /mnt/d/Projects/Bismuth/include/Bismuth.h \
+ /usr/include/stdc-predef.h /mnt/d/Projects/Bismuth/include/BWinManager.h \
  /mnt/d/Projects/Bismuth/include/TermWin.h \
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdbool.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
