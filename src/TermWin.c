@@ -18,10 +18,15 @@ static void drawWindow(Window *this) {
     }
 
     // 绘制顶边框
-    printf("╔═%s", this->getTitle(this));
-    for (int i = (int)strlen(this->getTitle(this)) + 3; i < this->getWidth(this); i++)
+    char tit[TITLE_MAX]; // 截取标题使其不超过窗口宽度
+    strncpy(tit, this->getTitle(this), this->getWidth(this) - 6);
+    tit[this->getWidth(this) - 6] = '\0';
+    //printf("%s", tit);
+
+    printf("╔═%s", tit);
+    for (int i = (int)strlen(tit); i < this->getWidth(this) - 6; i++)
         printf("═");
-    printf("╗\033[0m\n");
+    printf("-ox╗\033[0m\n");
 
     // 绘制中间区域
     for (int y = 1; y < this->getHeight(this) - 1; y++) {

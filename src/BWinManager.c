@@ -70,22 +70,7 @@ static void mainLoop(BWinManager* this) {
         // 读取输入
         read(STDIN_FILENO, &input, 1);
 
-        if (input == '\033') { // 转义序列
-            read(STDIN_FILENO, &input, 1); // 跳过[
-            read(STDIN_FILENO, &input, 1);
-
-            // 方向键处理
-            switch(input) {
-                case 'A': // 上
-                    this->activeWinIndex = (this->activeWinIndex + 1) % this->winCount;
-                    break;
-                case 'B': // 下
-                    this->activeWinIndex = (this->activeWinIndex - 1 + this->winCount) % this->winCount;
-                    break;
-                default:
-                    break;
-            }
-        } else if (input == '\n') { // 回车激活窗口
+        if (input == '\n') { // 回车激活窗口
             for (int i = 0; i < this->winCount; i++) {
                 this->windows[i].active = (i == this->activeWinIndex);
             }
