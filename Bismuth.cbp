@@ -78,6 +78,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/mnt/d/Projects/Bismuth/example/main.c">
+			<Option target="Bismuth"/>
+		</Unit>
 		<Unit filename="/mnt/d/Projects/Bismuth/include/BWinManager.h">
 			<Option target="Bismuth"/>
 		</Unit>
@@ -87,13 +90,19 @@
 		<Unit filename="/mnt/d/Projects/Bismuth/include/TermWin.h">
 			<Option target="Bismuth"/>
 		</Unit>
+		<Unit filename="/mnt/d/Projects/Bismuth/include/logger/logger.h">
+			<Option target="Bismuth"/>
+		</Unit>
 		<Unit filename="/mnt/d/Projects/Bismuth/src/BWinManager.c">
+			<Option target="Bismuth"/>
+		</Unit>
+		<Unit filename="/mnt/d/Projects/Bismuth/src/Module.c">
 			<Option target="Bismuth"/>
 		</Unit>
 		<Unit filename="/mnt/d/Projects/Bismuth/src/TermWin.c">
 			<Option target="Bismuth"/>
 		</Unit>
-		<Unit filename="/mnt/d/Projects/Bismuth/test/main.c">
+		<Unit filename="/mnt/d/Projects/Bismuth/src/logger/logger.c">
 			<Option target="Bismuth"/>
 		</Unit>
 		<Unit filename="/mnt/d/Projects/Bismuth/CMakeLists.txt">

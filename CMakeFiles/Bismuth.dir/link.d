@@ -3,8 +3,10 @@ Bismuth: \
   /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o \
   /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o \
   CMakeFiles/Bismuth.dir/src/TermWin.c.o \
-  CMakeFiles/Bismuth.dir/test/main.c.o \
   CMakeFiles/Bismuth.dir/src/BWinManager.c.o \
+  CMakeFiles/Bismuth.dir/example/main.c.o \
+  CMakeFiles/Bismuth.dir/src/Module.c.o \
+  CMakeFiles/Bismuth.dir/src/logger/logger.c.o \
   /usr/lib/gcc/x86_64-linux-gnu/14/libgcc.a \
   /usr/lib/gcc/x86_64-linux-gnu/14/libgcc_s.so \
   /usr/lib/gcc/x86_64-linux-gnu/14/libgcc_s.so \
@@ -35,9 +37,13 @@ Bismuth: \
 
 CMakeFiles/Bismuth.dir/src/TermWin.c.o:
 
-CMakeFiles/Bismuth.dir/test/main.c.o:
-
 CMakeFiles/Bismuth.dir/src/BWinManager.c.o:
+
+CMakeFiles/Bismuth.dir/example/main.c.o:
+
+CMakeFiles/Bismuth.dir/src/Module.c.o:
+
+CMakeFiles/Bismuth.dir/src/logger/logger.c.o:
 
 /usr/lib/gcc/x86_64-linux-gnu/14/libgcc.a:
 

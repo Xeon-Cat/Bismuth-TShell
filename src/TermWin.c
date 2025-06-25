@@ -1,6 +1,7 @@
 /* termwin.c - 终端窗口实现 */
 #include "TermWin.h"
 #include "BWinManager.h"
+#include "logger/logger.h"
 
 #include <stdio.h>
 #include <string.h>
@@ -8,6 +9,8 @@
 
 /* 绘制单个窗口 */
 static void drawWindow(Window *this) {
+    if (this->isActive(this)) { LOG_DEBUG("x:%d, y:%d", this->getX(this), this->getY(this)); }
+
     // 设置颜色：活动窗口用蓝底白字，非活动灰底黑字
     printf("\033[%d;%dH", this->getY(this), this->getX(this)); // 定位到窗口左上角
 
@@ -93,9 +96,8 @@ Window* newWindow(int x, int y,
     win->getTitle = getTitle;
     win->setTitle = setTitle;
     win->isActive = isActive;
-    win->drawWindow = drawWindow;
     win->setActive = setActive;
-
+    win->drawWindow = drawWindow;
     win->x = x;
     win->y = y;
     win->width = w;

@@ -5,35 +5,10 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <termios.h>
+#include "logger/logger.h"
 
 
 static struct termios orig_termios;
-static void initTerminal(BWinManager* this);
-static void restoreTerminal();
-static void mainLoop(BWinManager* this);
-static int getActiveWinIndex(BWinManager* this);
-static void setActiveWinIndex(BWinManager* this, int index);
-static int getWinCount(BWinManager* this);
-static void active(BWinManager* this, Window* win);
-
-/* 构造函数 */
-BWinManager* newBismuth() {
-    BWinManager* this = malloc(sizeof(BWinManager));
-    this->activeWinIndex = 0;
-    this->winCount = 0;
-    this->initTerminal = initTerminal;
-    this->restoreTerminal = restoreTerminal;
-    this->mainLoop = mainLoop;
-    this->getActiveWinIndex = getActiveWinIndex;
-    this->getWinCount = getWinCount;
-    this->_setActiveWinIndex = setActiveWinIndex;
-    this->active = active;
-    return this;
-}
-/* 析构函数 */
-void delBismuth(BWinManager* this) {
-    free(this);
-}
 
 /* 初始化终端原始模式 */
 static void initTerminal(BWinManager* this) {
@@ -56,29 +31,45 @@ static void restoreTerminal() {
     tcsetattr(STDIN_FILENO, TCSAFLUSH, &orig_termios);
 }
 
+void drawWindows(BWinManager* master) {
+    // 清屏并绘制所有窗口
+    printf("\033[2J");
+    for (int i = 0; i < master->getWinCount(master); i++) {
+        master->windows[i].drawWindow(&master->windows[i]);
+        master->windows[i].drawWindow(&master->windows[i]);
+    }
+    master->windows[master->getActiveWinIndex(master)]
+    .drawWindow(&master->windows[master->getActiveWinIndex(master)]);
+    fflush(stdout);
+}
+
+void drawModules(BWinManager* master) {}
+
 /* 主事件循环 */
 static void mainLoop(BWinManager* this) {
     char input;
-    while (1) {
-        // 清屏并绘制所有窗口
-        printf("\033[2J");
-        for (int i = 0; i < this->winCount; i++) {
-            this->windows[i].drawWindow(&this->windows[i]);
-        }
-        fflush(stdout);
-
+    bool running = true;
+    while (running) {
+        // 绘制所管理的窗口
+        drawWindows(this);
         // 读取输入
         read(STDIN_FILENO, &input, 1);
-
-        if (input == '\n') { // 回车激活窗口
-            for (int i = 0; i < this->winCount; i++) {
-                this->windows[i].active = (i == this->activeWinIndex);
+        if (input == 'q') { // press q to quit
+            running = false;
+        } else if (input == 'd') { // press d to activate the next window
+            if (this->getActiveWinIndex(this) + 1 >= this->getWinCount(this)) {
+                continue;
             }
-        } else if (input == '\t') { // Tab退出
-            break;
+            this->active(this, &this->windows[this->getActiveWinIndex(this) + 1]);
+
+        } else if (input == 'u') { // press u to activate the previous window
+            if (this->getActiveWinIndex(this) - 1 < 0) {
+                continue;
+            }
+            this->active(this, &this->windows[this->getActiveWinIndex(this) - 1]);
         }
     }
-    delBismuth(this);
+    freeBismuth(this);
 }
 
 static int getActiveWinIndex(BWinManager* this) { return this->activeWinIndex; }
@@ -86,7 +77,9 @@ static int getActiveWinIndex(BWinManager* this) { return this->activeWinIndex; }
 static int getWinCount(BWinManager* this) { return this->winCount; }
 
 static void active(BWinManager* this, Window* win) {
+    if (win == NULL) return;
     if (win->isActive(win)) return;
+
     Window* tmp = &this->windows[this->getActiveWinIndex(this)];
     tmp->setActive(tmp, false);
     this->_setActiveWinIndex(this, win->id);
@@ -96,3 +89,25 @@ static void active(BWinManager* this, Window* win) {
 static void setActiveWinIndex(BWinManager* this, int index) {
     this->activeWinIndex = index;
 }
+
+
+
+/* 构造函数 */
+BWinManager* newBismuth() {
+    BWinManager* this = malloc(sizeof(BWinManager));
+    this->activeWinIndex = 0;
+    this->winCount = 0;
+    this->initTerminal = initTerminal;
+    this->restoreTerminal = restoreTerminal;
+    this->mainLoop = mainLoop;
+    this->getActiveWinIndex = getActiveWinIndex;
+    this->getWinCount = getWinCount;
+    this->_setActiveWinIndex = setActiveWinIndex;
+    this->active = active;
+    return this;
+}
+/* 析构函数 */
+void freeBismuth(BWinManager* this) {
+    free(this);
+}
+

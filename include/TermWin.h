@@ -2,6 +2,7 @@
 #define BISMUTH_TERMWIN_H
 
 #include <stdbool.h>
+#include "Module.h"
 
 
 #define MAX_WINDOWS 128
@@ -31,8 +32,11 @@ struct Window {
     bool (*isActive)(const Window* this); // 是否活动窗口
     void (*setActive)(Window* this, bool operation);
 
+
     void (*drawWindow)(Window *this);
-}; Window* newWindow(int x, int y, int w, int h, const char* title, BWinManager* master);
+    Module* mods;
+};
+Window* newWindow(int x, int y, int w, int h, const char* title, BWinManager* master);
 
 
 

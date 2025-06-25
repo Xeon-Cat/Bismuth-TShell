@@ -85,12 +85,12 @@ clean: CMakeFiles/Bismuth.dir/clean
 CMakeFiles/Bismuth.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Bismuth.dir/build.make CMakeFiles/Bismuth.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Bismuth.dir/build.make CMakeFiles/Bismuth.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/d/Projects/Bismuth/CMakeFiles --progress-num=1,2,3,4 "Built target Bismuth"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/d/Projects/Bismuth/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target Bismuth"
 .PHONY : CMakeFiles/Bismuth.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Bismuth.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/Projects/Bismuth/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/Projects/Bismuth/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Bismuth.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/Projects/Bismuth/CMakeFiles 0
 .PHONY : CMakeFiles/Bismuth.dir/rule
@@ -102,7 +102,7 @@ Bismuth: CMakeFiles/Bismuth.dir/rule
 # codegen rule for target.
 CMakeFiles/Bismuth.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Bismuth.dir/build.make CMakeFiles/Bismuth.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/d/Projects/Bismuth/CMakeFiles --progress-num=1,2,3,4 "Finished codegen for target Bismuth"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/d/Projects/Bismuth/CMakeFiles --progress-num=1,2,3,4,5,6 "Finished codegen for target Bismuth"
 .PHONY : CMakeFiles/Bismuth.dir/codegen
 
 # clean rule for target.

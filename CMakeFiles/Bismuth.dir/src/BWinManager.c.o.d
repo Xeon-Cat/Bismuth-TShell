@@ -2,7 +2,8 @@ CMakeFiles/Bismuth.dir/src/BWinManager.c.o: \
  /mnt/d/Projects/Bismuth/src/BWinManager.c /usr/include/stdc-predef.h \
  /mnt/d/Projects/Bismuth/include/BWinManager.h \
  /mnt/d/Projects/Bismuth/include/TermWin.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/stdbool.h /usr/include/stdio.h \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/stdbool.h \
+ /mnt/d/Projects/Bismuth/include/Module.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -67,4 +68,5 @@ CMakeFiles/Bismuth.dir/src/BWinManager.c.o: \
  /usr/include/x86_64-linux-gnu/bits/termios-c_lflag.h \
  /usr/include/x86_64-linux-gnu/bits/termios-tcflow.h \
  /usr/include/x86_64-linux-gnu/bits/termios-misc.h \
- /usr/include/x86_64-linux-gnu/sys/ttydefaults.h
+ /usr/include/x86_64-linux-gnu/sys/ttydefaults.h \
+ /mnt/d/Projects/Bismuth/include/logger/logger.h

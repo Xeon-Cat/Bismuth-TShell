@@ -7,7 +7,15 @@ include_directories(include)
 add_executable(Bismuth
         include/TermWin.h
         src/TermWin.c
+
         include/BWinManager.h
-        test/main.c
         src/BWinManager.c
-        include/Module.h)
+
+        example/main.c
+
+        include/Module.h
+        src/Module.c
+
+        src/logger/logger.c
+        include/logger/logger.h
+        )

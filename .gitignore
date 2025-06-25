@@ -1,0 +1,11 @@
+test
+.cmake
+Testing
+cmake-build-debug
+CMakeFiles
+
+Bismuth
+Bismuth.cbp
+CMakeCache.txt
+cmake_install.cmake
+app.log

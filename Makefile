@@ -136,6 +136,30 @@ Bismuth/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Bismuth.dir/build.make CMakeFiles/Bismuth.dir/build
 .PHONY : Bismuth/fast
 
+example/main.o: example/main.c.o
+.PHONY : example/main.o
+
+# target to build an object file
+example/main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Bismuth.dir/build.make CMakeFiles/Bismuth.dir/example/main.c.o
+.PHONY : example/main.c.o
+
+example/main.i: example/main.c.i
+.PHONY : example/main.i
+
+# target to preprocess a source file
+example/main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Bismuth.dir/build.make CMakeFiles/Bismuth.dir/example/main.c.i
+.PHONY : example/main.c.i
+
+example/main.s: example/main.c.s
+.PHONY : example/main.s
+
+# target to generate assembly for a file
+example/main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Bismuth.dir/build.make CMakeFiles/Bismuth.dir/example/main.c.s
+.PHONY : example/main.c.s
+
 src/BWinManager.o: src/BWinManager.c.o
 .PHONY : src/BWinManager.o
 
@@ -159,6 +183,30 @@ src/BWinManager.s: src/BWinManager.c.s
 src/BWinManager.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Bismuth.dir/build.make CMakeFiles/Bismuth.dir/src/BWinManager.c.s
 .PHONY : src/BWinManager.c.s
+
+src/Module.o: src/Module.c.o
+.PHONY : src/Module.o
+
+# target to build an object file
+src/Module.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Bismuth.dir/build.make CMakeFiles/Bismuth.dir/src/Module.c.o
+.PHONY : src/Module.c.o
+
+src/Module.i: src/Module.c.i
+.PHONY : src/Module.i
+
+# target to preprocess a source file
+src/Module.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Bismuth.dir/build.make CMakeFiles/Bismuth.dir/src/Module.c.i
+.PHONY : src/Module.c.i
+
+src/Module.s: src/Module.c.s
+.PHONY : src/Module.s
+
+# target to generate assembly for a file
+src/Module.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Bismuth.dir/build.make CMakeFiles/Bismuth.dir/src/Module.c.s
+.PHONY : src/Module.c.s
 
 src/TermWin.o: src/TermWin.c.o
 .PHONY : src/TermWin.o
@@ -184,29 +232,29 @@ src/TermWin.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Bismuth.dir/build.make CMakeFiles/Bismuth.dir/src/TermWin.c.s
 .PHONY : src/TermWin.c.s
 
-test/main.o: test/main.c.o
-.PHONY : test/main.o
+src/logger/logger.o: src/logger/logger.c.o
+.PHONY : src/logger/logger.o
 
 # target to build an object file
-test/main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Bismuth.dir/build.make CMakeFiles/Bismuth.dir/test/main.c.o
-.PHONY : test/main.c.o
+src/logger/logger.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Bismuth.dir/build.make CMakeFiles/Bismuth.dir/src/logger/logger.c.o
+.PHONY : src/logger/logger.c.o
 
-test/main.i: test/main.c.i
-.PHONY : test/main.i
+src/logger/logger.i: src/logger/logger.c.i
+.PHONY : src/logger/logger.i
 
 # target to preprocess a source file
-test/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Bismuth.dir/build.make CMakeFiles/Bismuth.dir/test/main.c.i
-.PHONY : test/main.c.i
+src/logger/logger.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Bismuth.dir/build.make CMakeFiles/Bismuth.dir/src/logger/logger.c.i
+.PHONY : src/logger/logger.c.i
 
-test/main.s: test/main.c.s
-.PHONY : test/main.s
+src/logger/logger.s: src/logger/logger.c.s
+.PHONY : src/logger/logger.s
 
 # target to generate assembly for a file
-test/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Bismuth.dir/build.make CMakeFiles/Bismuth.dir/test/main.c.s
-.PHONY : test/main.c.s
+src/logger/logger.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Bismuth.dir/build.make CMakeFiles/Bismuth.dir/src/logger/logger.c.s
+.PHONY : src/logger/logger.c.s
 
 # Help Target
 help:
@@ -218,15 +266,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Bismuth"
+	@echo "... example/main.o"
+	@echo "... example/main.i"
+	@echo "... example/main.s"
 	@echo "... src/BWinManager.o"
 	@echo "... src/BWinManager.i"
 	@echo "... src/BWinManager.s"
+	@echo "... src/Module.o"
+	@echo "... src/Module.i"
+	@echo "... src/Module.s"
 	@echo "... src/TermWin.o"
 	@echo "... src/TermWin.i"
 	@echo "... src/TermWin.s"
-	@echo "... test/main.o"
-	@echo "... test/main.i"
-	@echo "... test/main.s"
+	@echo "... src/logger/logger.o"
+	@echo "... src/logger/logger.i"
+	@echo "... src/logger/logger.s"
 .PHONY : help
 
 

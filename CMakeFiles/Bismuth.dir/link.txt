@@ -1,1 +1,1 @@
-/usr/bin/cc -g -Wl,--dependency-file=CMakeFiles/Bismuth.dir/link.d CMakeFiles/Bismuth.dir/src/TermWin.c.o CMakeFiles/Bismuth.dir/test/main.c.o CMakeFiles/Bismuth.dir/src/BWinManager.c.o -o Bismuth
+/usr/bin/cc -g -Wl,--dependency-file=CMakeFiles/Bismuth.dir/link.d CMakeFiles/Bismuth.dir/src/TermWin.c.o CMakeFiles/Bismuth.dir/src/BWinManager.c.o CMakeFiles/Bismuth.dir/example/main.c.o CMakeFiles/Bismuth.dir/src/Module.c.o CMakeFiles/Bismuth.dir/src/logger/logger.c.o -o Bismuth

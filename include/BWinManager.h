@@ -9,6 +9,7 @@ typedef struct BWinManager BWinManager;
 struct BWinManager {
     Window windows[MAX_WINDOWS];
     int activeWinIndex;
+
     int (*getActiveWinIndex)(BWinManager* this);
     void (*_setActiveWinIndex)(BWinManager* this, int index);
     int winCount;
@@ -20,6 +21,6 @@ struct BWinManager {
 
     void (*active)(BWinManager* this, Window* win);
     bool (*isActive)(BWinManager* this, Window* win);
-}; BWinManager* newBismuth(); void delBismuth(BWinManager* this);
+}; BWinManager* newBismuth(); void freeBismuth(BWinManager* this);
 
 #endif //BISMUTH_H

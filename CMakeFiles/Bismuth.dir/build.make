@@ -86,24 +86,10 @@ CMakeFiles/Bismuth.dir/src/TermWin.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Bismuth.dir/src/TermWin.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/Projects/Bismuth/src/TermWin.c -o CMakeFiles/Bismuth.dir/src/TermWin.c.s
 
-CMakeFiles/Bismuth.dir/test/main.c.o: CMakeFiles/Bismuth.dir/flags.make
-CMakeFiles/Bismuth.dir/test/main.c.o: test/main.c
-CMakeFiles/Bismuth.dir/test/main.c.o: CMakeFiles/Bismuth.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/d/Projects/Bismuth/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Bismuth.dir/test/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Bismuth.dir/test/main.c.o -MF CMakeFiles/Bismuth.dir/test/main.c.o.d -o CMakeFiles/Bismuth.dir/test/main.c.o -c /mnt/d/Projects/Bismuth/test/main.c
-
-CMakeFiles/Bismuth.dir/test/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Bismuth.dir/test/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/Projects/Bismuth/test/main.c > CMakeFiles/Bismuth.dir/test/main.c.i
-
-CMakeFiles/Bismuth.dir/test/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Bismuth.dir/test/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/Projects/Bismuth/test/main.c -o CMakeFiles/Bismuth.dir/test/main.c.s
-
 CMakeFiles/Bismuth.dir/src/BWinManager.c.o: CMakeFiles/Bismuth.dir/flags.make
 CMakeFiles/Bismuth.dir/src/BWinManager.c.o: src/BWinManager.c
 CMakeFiles/Bismuth.dir/src/BWinManager.c.o: CMakeFiles/Bismuth.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/d/Projects/Bismuth/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Bismuth.dir/src/BWinManager.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/d/Projects/Bismuth/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Bismuth.dir/src/BWinManager.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Bismuth.dir/src/BWinManager.c.o -MF CMakeFiles/Bismuth.dir/src/BWinManager.c.o.d -o CMakeFiles/Bismuth.dir/src/BWinManager.c.o -c /mnt/d/Projects/Bismuth/src/BWinManager.c
 
 CMakeFiles/Bismuth.dir/src/BWinManager.c.i: cmake_force
@@ -114,22 +100,68 @@ CMakeFiles/Bismuth.dir/src/BWinManager.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Bismuth.dir/src/BWinManager.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/Projects/Bismuth/src/BWinManager.c -o CMakeFiles/Bismuth.dir/src/BWinManager.c.s
 
+CMakeFiles/Bismuth.dir/example/main.c.o: CMakeFiles/Bismuth.dir/flags.make
+CMakeFiles/Bismuth.dir/example/main.c.o: example/main.c
+CMakeFiles/Bismuth.dir/example/main.c.o: CMakeFiles/Bismuth.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/d/Projects/Bismuth/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Bismuth.dir/example/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Bismuth.dir/example/main.c.o -MF CMakeFiles/Bismuth.dir/example/main.c.o.d -o CMakeFiles/Bismuth.dir/example/main.c.o -c /mnt/d/Projects/Bismuth/example/main.c
+
+CMakeFiles/Bismuth.dir/example/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Bismuth.dir/example/main.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/Projects/Bismuth/example/main.c > CMakeFiles/Bismuth.dir/example/main.c.i
+
+CMakeFiles/Bismuth.dir/example/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Bismuth.dir/example/main.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/Projects/Bismuth/example/main.c -o CMakeFiles/Bismuth.dir/example/main.c.s
+
+CMakeFiles/Bismuth.dir/src/Module.c.o: CMakeFiles/Bismuth.dir/flags.make
+CMakeFiles/Bismuth.dir/src/Module.c.o: src/Module.c
+CMakeFiles/Bismuth.dir/src/Module.c.o: CMakeFiles/Bismuth.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/d/Projects/Bismuth/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Bismuth.dir/src/Module.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Bismuth.dir/src/Module.c.o -MF CMakeFiles/Bismuth.dir/src/Module.c.o.d -o CMakeFiles/Bismuth.dir/src/Module.c.o -c /mnt/d/Projects/Bismuth/src/Module.c
+
+CMakeFiles/Bismuth.dir/src/Module.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Bismuth.dir/src/Module.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/Projects/Bismuth/src/Module.c > CMakeFiles/Bismuth.dir/src/Module.c.i
+
+CMakeFiles/Bismuth.dir/src/Module.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Bismuth.dir/src/Module.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/Projects/Bismuth/src/Module.c -o CMakeFiles/Bismuth.dir/src/Module.c.s
+
+CMakeFiles/Bismuth.dir/src/logger/logger.c.o: CMakeFiles/Bismuth.dir/flags.make
+CMakeFiles/Bismuth.dir/src/logger/logger.c.o: src/logger/logger.c
+CMakeFiles/Bismuth.dir/src/logger/logger.c.o: CMakeFiles/Bismuth.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/d/Projects/Bismuth/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Bismuth.dir/src/logger/logger.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Bismuth.dir/src/logger/logger.c.o -MF CMakeFiles/Bismuth.dir/src/logger/logger.c.o.d -o CMakeFiles/Bismuth.dir/src/logger/logger.c.o -c /mnt/d/Projects/Bismuth/src/logger/logger.c
+
+CMakeFiles/Bismuth.dir/src/logger/logger.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Bismuth.dir/src/logger/logger.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/Projects/Bismuth/src/logger/logger.c > CMakeFiles/Bismuth.dir/src/logger/logger.c.i
+
+CMakeFiles/Bismuth.dir/src/logger/logger.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Bismuth.dir/src/logger/logger.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/Projects/Bismuth/src/logger/logger.c -o CMakeFiles/Bismuth.dir/src/logger/logger.c.s
+
 # Object files for target Bismuth
 Bismuth_OBJECTS = \
 "CMakeFiles/Bismuth.dir/src/TermWin.c.o" \
-"CMakeFiles/Bismuth.dir/test/main.c.o" \
-"CMakeFiles/Bismuth.dir/src/BWinManager.c.o"
+"CMakeFiles/Bismuth.dir/src/BWinManager.c.o" \
+"CMakeFiles/Bismuth.dir/example/main.c.o" \
+"CMakeFiles/Bismuth.dir/src/Module.c.o" \
+"CMakeFiles/Bismuth.dir/src/logger/logger.c.o"
 
 # External object files for target Bismuth
 Bismuth_EXTERNAL_OBJECTS =
 
 Bismuth: CMakeFiles/Bismuth.dir/src/TermWin.c.o
-Bismuth: CMakeFiles/Bismuth.dir/test/main.c.o
 Bismuth: CMakeFiles/Bismuth.dir/src/BWinManager.c.o
+Bismuth: CMakeFiles/Bismuth.dir/example/main.c.o
+Bismuth: CMakeFiles/Bismuth.dir/src/Module.c.o
+Bismuth: CMakeFiles/Bismuth.dir/src/logger/logger.c.o
 Bismuth: CMakeFiles/Bismuth.dir/build.make
 Bismuth: CMakeFiles/Bismuth.dir/compiler_depend.ts
 Bismuth: CMakeFiles/Bismuth.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/d/Projects/Bismuth/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable Bismuth"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/d/Projects/Bismuth/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable Bismuth"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Bismuth.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
